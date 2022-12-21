@@ -1,2 +1,1 @@
-Welcome,
-dont cheat
+Welcome to the Python Introduction. 
