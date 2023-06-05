@@ -1,0 +1,91 @@
+CIS-105-75 Week 3 Lab 2
+
+#Question 1: Baseball Field Positions
+print('This program will take a number from 1-9 and give the user the corresponding baseball field position
+
+num = int(input('Enter a number from 1-9'))
+
+if num = 1
+   print('The field position for this number is: Pitcher')
+elif num = 2 
+   print('The field position for this number is: Catcher') 
+elif num = 3
+   print('The field position for this number is: First Baseman')
+elif num = 4
+   print('The field position for this number is: Second Baseman')
+elif num = 5
+   print('The field position for this number is: Third Baseman')
+elif num = 6 
+   print('The field position for this number is: Shortstop')
+elif num = 7
+   print('The field position for this number is: Left Fielder')
+elif num = 8 
+   print('The field position for this number is: Center Fielder')
+elif num = 9
+   print('The field position for this number is: Right Fielder')
+else
+   print('Invalid value')
+
+Question 2: Enhanced Fujita Tornado Scale
+print('This program will ask the user for a 3-second wind gust and return the EF rating')
+wind_gust = int(input('Enter the 3 second wind gust speed'))
+
+if (wind_gust >= 65) and (wind_gust <= 85):
+    print('This wind is considered a 0 rating on the EF Scale')
+
+elif (wind_gust >= 86) and (wind_gust <= 110):
+    print('This wind is considered a 1 rating on the EF Scale')
+
+elif (wind_gust >= 111) and (wind_gust <= 135):
+    print('This wind is considered a 2 rating on the EF Scale')
+
+elif (wind_gust >= 136) and (wind_gust <= 165):
+    print('This wind is considered a 3 rating on the EF Scale')
+
+elif (wind_gust >= 166) and (wind_gust <= 200):
+    print('This wind is considered a 4 rating on the EF Scale')
+
+elif (wind_gust > 200):
+    print('This wind is considered a 5 rating on the EF Scale')
+
+else:
+    print('This is too low to be considered on the EF Scale')
+
+
+
+
+#Question 3: Points in the Cartesian Plane
+print('This program will get an x & y value and give the user which quadrant of a plane it belongs to')
+x = int(input('Enter the x value: ')) #asks the user for the x value
+y = int(input('Enter the y value: ')) #asks the user for the y value
+
+if (x > 0 and y > 0):
+   print('This point lies in the: First Quadrant')
+
+elif (x < 0 and y > 0):
+   print('This point lies in the: Second Quadrant')
+
+elif (x > 0 and y < 0):
+    print('This point lies in the: Third Quadrant')
+
+elif (x > and y < 0):
+    print('This point lies in the: Fourth Quadrant')
+
+elif (x > 0 and y == 0):
+      print('This point lies at the Positive x axis')
+
+elif (x == 0 and y > 0):
+    print('This point lies at the positive y axis')
+
+elif (x < 0 and y == 0):
+    print('This point lies at the negative x axis')
+
+elif (x == 0 and y < 0):
+    print('This point lies at the negative y axis')
+
+else:
+    print('This point lies at the Origin')
+
+
+
+
