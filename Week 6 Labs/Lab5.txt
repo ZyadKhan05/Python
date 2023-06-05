@@ -1,0 +1,80 @@
+CIS-105
+Zyad Khan
+Lab 5 Chapters 6 and 12
+
+#Problem 1- Lucas numbers recursion
+# This program uses recursion to print numbers from the Lucas series.
+
+#intro function explaining the program
+def intro ():
+    print('Hello, this program will use recursion to print numbers from the Lucas series')
+    print('The lucas numbers are a sequence of integers, each integers is defined to be the sum of its two immediately previous terms') 
+
+#the main function
+def main():
+    intro()
+    n = int(input('Enter the amount of Lucas numbers you want to display: ')) #input the user to enter the amount of lucas numbers they wsnt to go to
+    print('The first', n, 'numbers in the') 
+    print('Lucas series are:')
+
+    for number in range(n): #for the numbers in range of n: the inputed value
+        print(lucas(number)) 
+    
+# The lucas function returns the number inputed by the user in the Lucas series
+def lucas(n):
+    if n == 0:
+        return 2
+    elif n == 1:
+        return 1
+    else:
+        return lucas(n - 1) + lucas(n - 2)
+
+# Calling the main function
+main()
+
+
+
+
+#Problem 2- Write directory Information to a directory.txt file
+
+def intro():
+    print('Hello, this function will create a directory of contributors for a local community group.')
+    
+def main():
+# Calling the function explaining the purpose of the program
+    intro()
+# The local variables of the program
+    name = ''
+    favorite_dessert = ''
+    num_contribution = 0
+    num_contributors = 0
+
+# Prompt user for the number of players
+    num_contributors = int(input('Enter the number of ' \
+                                 'contributors: '))
+
+# Open directory.txt for writing
+    file_object = open('directory.txt', 'w')
+    
+# Write data to file
+    for i in range(num_contributors):
+# Prompt for name
+        name = input('Enter the name of the contributor: ')
+# Prompt for favorite dessert 
+        favorite_dessert = input('Enter your favorite dessert: ')
+# Prompt for the monetary contribution amount
+        num_contribution = int(input('Enter the amount they donated to the local community group: '))
+
+# Write data to file  
+        file_object.write(name + '\n')
+        file_object.write(favorite_dessert + '\n') 
+        file_object.write(str(num_contribution) + '\n')
+
+# Close the file
+    file_object.close()
+
+# Call the function
+main()
+
+#Problem 3- Read/Display directory file with summary stats and exception handling
+
